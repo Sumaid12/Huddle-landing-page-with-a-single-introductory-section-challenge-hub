@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .body,
+        html {
+            width: 100%;
+            height: 100%;
+            background: url('bg-desktop.svg') no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+            background-size: 100% 100%;
+            background-color: hsl(257, 40%, 49%);
+        }
+
+        .header {
+            margin-top: 30px;
+            margin-left: 5%;
+            width: 85%;
+            height: auto;
+            display: block;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .body-element {
+            margin-top: 50px;
+            margin-left: 5%;
+            margin-right: 10%;
+            width: auto;
+            height: auto;
+            display: flex;
+        }
+
+        .container-1 {
+            width: 50%;
+            height: auto;
+        }
+
+        .container-1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container-2 {
+            margin-top: 50px;
+            width: 50%;
+            height: auto;
+            color: white;
+        }
+
+        .container-2 p,
+        h1,
+        button {
+            margin-right: 4%;
+            margin-left: 10%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-1 {
+            background-color: white;
+            border: none;
+            color: hsl(257, 40%, 49%);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 200px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 10px 10px 8p black;
+        }
+
+        .button-1:hover {
+            background-color: hsl(300, 69%, 71%);
+        }
+
+        .ion-icon-block {
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            margin-right: 10%;
+            margin-bottom: 3%;
+        }
+
+        ion-icon {
+            font-size: 35px;
+            color: white;
+            border: white;
+        }
+
+        ion-icon:hover {
+            color: hsl(300, 69%, 71%);
+        }
+
+        @media only screen and (max-width: 375px) {
+            .body-element{
+                flex-direction: column;
+                margin-right: 5%;
+            }
+            .container-1{
+                width: 100%;
+            }
+            .container-2{
+                width: 100%;
+                flex-direction: column;
+    text-align: center;
+            }
+            .ion-icon-block {
+                display: flex;
+                justify-content: center;
+                margin-right: 0;
+                margin-top: 50px;
+                position: relative;
+            }
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.svg">
+    </div>
+    <div class="body-element">
+        <div class="container-1">
+            <img src="illustration-mockups.svg">
+        </div>
+        <div class="container-2">
+            <h1 style="font-weight: 600px;">Build The Community</h1>
+            <h1 style="font-weight: 600px;">Your Fans Will Love</h1><br>
+            <p style="font-weight: 400px;">Huddle re-imagine the way we build communities. You have
+                a voice, but so does your audience. Create connections width
+                your users as you engage in genuine discussions.
+            </p><br>
+            <button class="button-1">Register</button>
+        </div>
+    </div>
+    <div class="ion-icon-block">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+</body>
+</html>
